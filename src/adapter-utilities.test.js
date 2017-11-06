@@ -3,6 +3,7 @@ import {
   computeBoundingRect,
   deregisterInteractionHandler,
   isSurfaceActive,
+  isSurfaceDisabled,
   isUnbounded,
   registerInteractionHandler,
   removeClass,
@@ -64,6 +65,24 @@ test('\'isSurfaceActive()\' returns false when the surface is inactive', () => {
   const actual = isSurfaceActive(element)();
 
   expect(actual).toBe(false);
+});
+
+test('\'isSurfaceDisabled()\' returns false if the element is disabled', () => {
+  const DISABLED = false;
+  const expected = DISABLED;
+
+  const actual = isSurfaceDisabled(DISABLED)();
+
+  expect(actual).toBe(expected);
+});
+
+test('\'isSurfaceDisabled()\' returns true if the element is not disabled', () => {
+  const DISABLED = true;
+  const expected = DISABLED;
+
+  const actual = isSurfaceDisabled(DISABLED)();
+
+  expect(actual).toBe(expected);
 });
 
 test('\'isUnbounded()\' returns the \'centered\' property directly', () => {

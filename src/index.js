@@ -5,13 +5,14 @@ import {
   computeBoundingRect,
   deregisterInteractionHandler,
   isSurfaceActive,
+  isSurfaceDisabled,
   isUnbounded,
   registerInteractionHandler,
   removeClass,
   updateCssVariable,
 } from './adapter-utilities';
 
-export default ({ centered, element, self, updateClassNames, updateCssVariables }) =>
+export default ({ centered, disabled, element, self, updateClassNames, updateCssVariables }) =>
   new MDCRippleFoundation({
     ...MDCRipple.createAdapter(self),
     addClass: addClass(updateClassNames),
@@ -19,6 +20,7 @@ export default ({ centered, element, self, updateClassNames, updateCssVariables 
     deregisterInteractionHandler: deregisterInteractionHandler(element),
     isUnbounded: isUnbounded(centered),
     isSurfaceActive: isSurfaceActive(element),
+    isSurfaceDisabled: isSurfaceDisabled(disabled),
     removeClass: removeClass(updateClassNames),
     registerInteractionHandler: registerInteractionHandler(element),
     updateCssVariable: updateCssVariable(updateCssVariables),

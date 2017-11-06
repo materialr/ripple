@@ -20,6 +20,8 @@ export const deregisterInteractionHandler = element =>
 
 export const isSurfaceActive = element => () => element[matches](':active');
 
+export const isSurfaceDisabled = disabled => () => disabled;
+
 export const isUnbounded = centered => () => centered;
 
 export const registerInteractionHandler = element => (type, handler) =>
