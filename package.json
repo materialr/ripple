@@ -1,7 +1,7 @@
 {
   "name": "@materialr/ripple",
   "version": "0.0.0-development",
-  "description": "Material ripple foundation",
+  "description": "Material ripple foundation implementation for React",
   "main": "lib/index.js",
   "scripts": {
     "build:production": "babel src --out-dir lib --ignore **/*.test.js,**/*.test.jsx",

@@ -2,6 +2,6 @@ version: "3.0"
 services:
   app:
     build: "."
-    container_name: "react-preloadr"
+    container_name: "materialr-ripple"
     volumes:
       - ./:/app

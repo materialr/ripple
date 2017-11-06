@@ -1,3 +1,3 @@
 # @materialr/ripple
 
-Material ripple foundation and requirements
+Material ripple foundation for React
