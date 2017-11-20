@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/materialr/ripple#readme",
   "dependencies": {
-    "@material/ripple": "^0.24.0"
+    "@material/ripple": "^0.25.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
