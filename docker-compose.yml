@@ -4,4 +4,4 @@ services:
     build: "."
     container_name: "materialr-ripple"
     volumes:
-      - ./:/app
+      - ./:/home/node/app
